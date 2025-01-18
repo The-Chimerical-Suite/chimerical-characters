@@ -1,0 +1,23 @@
+[project]
+authors = [{name = "Ethan Shanahan", email = "ethan.shanahan@gmail.com"}]
+dependencies = []
+description = "A character sheet application for D&D."
+name = "chimerical-characters"
+requires-python = ">= 3.11"
+version = "0.1.0"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["win-64"]
+
+[tool.pixi.pypi-dependencies]
+chimerical_characters = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+
+[tool.pixi.dependencies]
+python = "3.13.*"
